@@ -18,3 +18,5 @@ def merge_pdfs(pdfs, output_file):
             pdfMerger.append(f)
         with open(output_file, 'wb') as f:
             pdfMerger.write(f)
+
+## TODO: Add if __name__ == '__main__': section
