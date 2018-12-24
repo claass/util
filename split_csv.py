@@ -10,7 +10,7 @@ def split_csv(input_file, output_path, output_file, split_by):
         input_file (str):   path to csv to be split
         output_path (str):  folder to save chunks to
         output_file (str):  prefix for output chunks
-        split_by (str): column name to split the input csv by
+        split_by (str):     column name to split the input csv by
     """
     df = pd.read_csv(input_file)
     for val in df[split_by].unique():
